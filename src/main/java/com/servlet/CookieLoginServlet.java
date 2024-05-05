@@ -53,7 +53,7 @@ public class CookieLoginServlet extends HttpServlet {
 		// 쿠키를 response에 담아 클라이언트에게 응답한다
 		response.addCookie(cookie);
 		cookie.setMaxAge(60 * 60); // 쿠키유효시간설정(1시간)
-		response.sendRedirect("/view/cookieLoginOk.jsp");
+		response.sendRedirect("/study_jsp/view/cookieLoginOk.jsp");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
